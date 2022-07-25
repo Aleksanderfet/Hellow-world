@@ -5,7 +5,8 @@
     <title>zn</title>
   </head>
   <body>
-    <script type="text/javascript">
+    "user strict";
+  <!--  <script type="text/javascript">
       let x =5;
       let msg ="hellow"; //строка//
       let flag =  false; //булевый правда не лож//
@@ -13,9 +14,200 @@
       let something = undefined; //неопределенность неизвесное что то//
 
       let obj = {}; //обект//
+      let x = "2";
+      console.log(x);
+      console.log( typeof x);
 
 
+    </script> -->
+    <script>
+           //alert
+      //alert ("boss")  //спрашивает boss и просит нажать Ок
+            //prompt
+      //result = prompt('title');
+
+      //let age = prompt ('как тебя зовут');  //спрашивает сколько лет после запятой пишится то, что буде в строке как подсказка
+      //alert('тебе 100');                   // ответ - 100
+
+            //confirm
+      //let isBoss = confirm ("ты зхдесь главный?");  // спрашивает "ты зхдесь главный?"
+      //alert (isBoss);                               // если Ок то - true; любое другое действие - false
 
     </script>
+    <script>
+              //ДЗ урок 2
+          // Переменные
+//    let message;        // переменная
+//    message = 'hellow'; // строка в переменной с именем
+//    alert (message);    // показывает содержимое переменной
+    //несколько переменных
+//      let user = 'jon';
+//      let age = 25;
+//      let message = 'hellow';
+
+//let roma = {
+//  name = 'Roma'
+//  sayHi : function (){
+//    alert ('hellow frend');
+//  }
+//}
+//
+//    </script>
+    <script>
+              // Операторы сравнения
+//    "user strict";
+//    let x = 5;
+//    let y = 10;
+
+//    console. log(x > y);   // в инструментах разработчика будет false
+
+
+            // как ДЗ 2 урока повторить!!!
+    //let name = prompt('enter your name','');  //переменные
+    //let age = prompt('enter your age','');
+    //let message = prompt('enter your message Hellow','');
+
+    //let printMessage = name + "" + age + "" + message;  //переменная собирает в одну строку
+    //alert(printMessage);                                //выводим
+
+             //условный опператор if
+      //let name = prompt('enter your name','');  //переменные
+      //let age = prompt('enter your age','');
+      //let message = prompt('enter your message Hellow','');
+      //let printMessage = name + "" + age + "" + message;  //переменная собирает в одну строку
+
+      //let approve = confirm('do you mant to print?');  //переменная которая получает значения
+
+      //if (approve){                       // условная конструкция if переменная проверяющая значения true/false
+      //    alert(printMessage);           // если true заходит сюда
+      //}
+
+      //if (approve){
+      //    alert(printMessage)
+      //} else if (2 > '3')  {
+      //    alert(printMessage2);
+      //} else {
+      //    alert ('no message to print');
+      //}
+
+
+
+
+                                  ////  Не сильно хорошо читаемо
+
+  //    let yourageMsg = age > 75 ? 'Daaamn' : 'Ok';    // age > 75 ? выражение
+                                                      // если оно True - 'Daaamn'
+                                                      // если оно false - 'Ok'
+                                  // это же в виде if
+  //    if (age > 74) {
+  //      a = age;
+  //    } alse {
+  //      a = 0;
+  //    }
+//                               //упрощенная запись if ( не рекомендуется)
+//      if (a > 5) {
+  //    a + b
+  //    };
+                             // цепочка
+  //      let yourageMsg = age > 75 ?                 // age > 75 ? выражение
+  //            'Daaamn' :                            // если оно True - 'Daaamn'
+  //            age > 65 ? 'Ok' :                     // если оно false то пепреходим ко второму (age > 65 ? 'Ok' :) и здесь опять проверека
+  //            'not ok';
+
+                             // Если if не выгодно  (действие простое а писать много)
+
+  //      let x = 5;
+  //      switch (x) {
+  //        case 1:
+  //          console.log(1);
+  //          break;             //нужно указывать чтоб он прекратил работать с вичом без него работать будет не правильно
+  //        case 2:
+  //          console.log(2);
+  //          break;
+  //        case 3:
+  //          console.log(3);
+  //          break;
+  //        case 4:
+  //          console.log(4);
+  //          break;
+  //        case 5:
+  //          console.log(5);
+  //          break;
+  //        default:
+  //           console.log(null)
+  //      }
+//как это работает ? получает на код значение(switch (x) проверяет
+//со всеми кейсами и должен сработать 5 кейс но сработает еще (null)
+//потому что после каждого нужно добавлять (break)
+//   КЕЙС ПРИМЕНЯЕТСЯ когда есть четкое значение  и может выпасть разная функция (кейсы) ВЫРАЖЕНИЕ НЕ ПОДХОДИТ!!!
+
+                  // switch cas комбинирование
+//     let x = 4;
+//     switch (x) {
+//       case 1:
+//       case 2:
+//       case 3:
+//       console.log(1, 2, 3);
+//       break;                       //нужно указывать чтоб он прекратил работать с вичом
+//       case 4:
+//         console.log(4);
+//         break;
+//       case 5:
+//         console.log(5);
+//         break;
+//
+//       default:
+//         console.log(null)
+//
+//      }
+
+                             //логические опператоры
+                                     // && - и
+
+      //    let x = 11;                          //у нас енсть переменная 5 и мы хотим понять что эта переменная в диапазоне от 1 до 10
+//
+      //    if(x >= 1 && x <= 10 ) {                //икс больше либо равен единице   и икс меньше либо равен десяти
+      //       console. log('ok');                   //  ок если попадает в диапазон
+      //    } else{
+      //       console. log('not ok');               // не ок если не попадает
+      //    }
+
+       //let x = 11;
+       //let y = 10 || x >=1
+
+       //console.log(y);                   //ответ будет 10!
+
+    //  let name = 'vasya';
+    //  let defaultName = name || "Default user";   //в таком случае ответ будет vasya
+
+    //  console.log(defaultName);
+
+                                  //   || - или
+    //  let name = '';
+    //  let defaultName = name || "Default user";   //в таком случае ответ будет Default user потому что
+                                                  //селектор проверил первую строку( defaultName = name)
+                                                  //там false и выводит то на чем остановил проверку (Default user)
+
+    //  console.log(defaultName);
+                          //МОЖНО ИСПОЛЬЗОВАТЬ КАК ЗНАЧЕНИЯ ПО УМОЛЧАНИЮ//
+
+                                  // ! - НЕ
+  //    let name = '';               // пустая строка по логике у нас false
+  //    let defaultName = !name;    // если (name) то ничего   если (!name) - true   если (!!name) - false
+      // как работает? сначало читает просто name  затем с ! за тем с двумя !!
+
+  //    console.log(defaultName);
+
+                            // более правильная запись для преведения к логике
+      let name = '';
+      let defaultName = Boolen(name);
+      console.log(defaultName);           //у меня не работает
+
+    </script>
+
+
+
+
+    <h1>hellow</h1>
   </body>
 </html>
